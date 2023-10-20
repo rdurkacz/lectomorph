@@ -1,3 +1,7 @@
+Reforming Whitaker's lexicon
+
+Whitaker's lexicon is the file DICTLINE.GEN in his Words project. The project can be found in several palces on the web, notably https://github.com/dsanson/Words and http://mk270.github.io/whitakers-words . There are projects around to modernise Whitaker, case in point being https://github.com/cqb13/vocab-vault . There is some discussion among the players at https://www.reddit.com/r/latin/comments/168pnbc/whitakers_words_and_comparable_projects/ . The object here and now is to modernise the lexicon so that it can be used outside of Whitaker's program (only the English translations - to salvage the grammatical, ie inflectional, data is a bigger challenge.) The first step is to get hold of a list of lexemes.
+
 List of lexemes.
 
 From a lexicon it should be expected that one could extract a list of lexemes. Conversely a lexicon must be built upon a list of lexemes.
@@ -8,15 +12,15 @@ It is necessary to have names to identify the lexemes. The starting point is the
 
 The disadvantage of this method is arbitrariness. Two authorities will not naturally come up with the same identifier for each lexeme and communication between them is impaired.
 
-A natural response to let the identifier be constructed by appending to the lemma an indicator of the category to which the lexeme belongs. Lila uses the term 'flectional category' and each lexeme belongs to one category. For instance the category of amo is v1r, meaning first conjugation verb (I do not know what r signifies). Therefore, let the identifier for amo be amo-v1r. Once a list of categories is adopted there is generally agreement between authorities as to how lexemes are categorised.
+A natural response to let the identifier be constructed by appending to the lemma an indicator of the category to which the lexeme belongs. Lila (https://lila-erc.eu/) uses the term 'flectional category' and each lexeme belongs to one category. For instance the category of amo is v1r, meaning first conjugation verb (I do not know what r signifies). Therefore, let the identifier for amo be amo-v1r. Once a list of categories is adopted there is generally agreement between authorities as to how lexemes are categorised.
 
-Even with this method there are cases of non-uniqueness but they are not common. From Whitaker an example is salio, a fourth conjugation verb meaning to jump as one lexeme and to salt as another. Then, but only in such cases, would one resort to an arbitrary distinction in the identifier, eg perhaps salio-v4-1 and salio-v4-2.
+Even with this method there are cases of non-uniqueness but they are not common. From Whitaker an example is salio, a fourth conjugation verb meaning to jump as one lexeme and to salt as another. Also sero of the third conjugation. Then, but only in such cases, would one resort to an arbitrary distinction in the identifier, eg perhaps salio-v4-1 and salio-v4-2.
 
 Whitaker recognises explicitly that lexemes may exist in multiple versions. He is forced into this by giving codes for each entry as to the era, source etc for each entry. Therefore there can be and are multiple entries for each lexeme. From one to another details may change. It is a challenge with Whitaker's lexicon to bring it back to tidy form, so as to know which are the lexemes and which are the variations. Note that there may be alternate forms for the lemma in which case there will be various lexeme identifier candidates for what is arguably the same lexeme.
 
 Whitaker's lexicon has its own peculiarities but sticking to what is typical or desirable in any lexicon we can say it has the following structure.
 
-It is no unique index but the primary key field is the lemma. It is more correct to say in the case of Whitaker, and more logical to use the stem, but practice favours the lemma. Additional to the lemma each entry belongs to a category of part of speech or a nrrower subdivision - if a verb then the category includes the conjugation.
+It has no unique index but the primary key field is the lemma. It is more correct to say in the case of Whitaker, and more logical to use the stem, but practice favours the lemma. Additional to the lemma each entry belongs to a category of part of speech or a nrrower subdivision - if a verb then the category includes the conjugation.
 Then there is a version code for each entry. A version code might in effect amount to being the general and only case or it might be a fine-grained combination
 In addition to the version field there is a kind field for eg verbs. The kind can be transitive, intransitive, deponent etc.
 
