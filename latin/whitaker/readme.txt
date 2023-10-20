@@ -20,20 +20,23 @@ Whitaker recognises explicitly that lexemes may exist in multiple versions. He i
 
 Whitaker's lexicon has its own peculiarities but sticking to what is typical or desirable in any lexicon we can say it has the following structure.
 
-It has no unique index but the primary key field is the lemma. It is more correct to say in the case of Whitaker, and more logical to use the stem, but practice favours the lemma. Additional to the lemma each entry belongs to a category of part of speech or a nrrower subdivision - if a verb then the category includes the conjugation.
-Then there is a version code for each entry. A version code might in effect amount to being the general and only case or it might be a fine-grained combination
+It has no unique index but the primary key field is the lemma. It is more correct to say in the case of Whitaker, and more logical, to use the stem, but practice favours the lemma. Additional to the lemma each entry belongs to a category of part of speech or a nrrower subdivision - if a verb then the category includes the conjugation.
+Then there is a version code for each entry. A version code might in effect amount to being the general and only case or it might be a fine-grained combination of conditions, one of several versions of the lexeme.
 In addition to the version field there is a kind field for eg verbs. The kind can be transitive, intransitive, deponent etc.
 
-Lemma, category together are the primary key.
-To begin with there may be multiple entries for a given primary key. When so, it needs to be determined if its a case of hononymy where distinct lexemes happen to have the same lemma and belong to the same category. In this case the identifier is modified to distinguish the cases. More often than that the differing entries correspond to different usages of what would be judged to be the same lexeme.
+An improved schema is needed. Lemma, category together should be the primary key and there should be a unique key based on that. We work through Whitaker's lexicon, firstly to supply the actual lemma and category according to our plan of the categories and then classify and combine entries so as to have one entry per lexeme.
+
+To begin with, where there may are multiple entries for a given primary key, it needs to be determined if it is a case of hononymy where distinct lexemes happen to have the same lemma and belong to the same category. In this case the identifier is modified to distinguish the cases. More often than that the differing entries correspond to different usages of what would be judged to be the same lexeme.
 
 Once it can be assumed that the keys are unambiguous, both grammatical and semantic information can be stored and accessed against the keys. 
-The grammatical information is about inflections, ie the principal parts or equivalent data. The semantic information is the meaning in the working language which has its own structure. The structure is expressed in text and the text can be hundreds of characters where there is a range of meanings and senses attached to the lexeme. 
+The grammatical information is about inflections, ie the principal parts or equivalent data. The semantic information is the meaning in the working language and this has its own structure. The structure is expressed in text and the text can be hundreds of characters where there is a range of meanings and senses attached to the lexeme. 
 
 The connection between key and value may be qualified by a 'kind' attribute or by a version code. In the simpler case the lexeme itself is governed by a kind or a version. Whitaker gives a version code for every lexeme or codes specialised to eech of its property values. The kind applies to different to the various parts of speech and has either grammatical or semantic meaning.
 
+The components in the data are in summary as follow.
+
 key
-  lemma-category
+  lemma-category (plus occasional disambguating element)
 
 value
   parts
@@ -47,7 +50,7 @@ A lexeme may have alternate forms, either alternate principal parts or an altern
 
 Whereas these notes are not derived from the Lila project, that project would appear to satisfy our objectives. We will aim for compatibility with Lila. 
 
-The present work goes toward converting the Whitaker lexicon into a form described. The conversion is done repeatably by a scripted process, such that the process can be audited, reviewed and modified indefinitely. The software is of course ad hoc, in no way is it any better than it needs to be, since it should fall out of use as soon as its one and only job is done satisfactorily.
+The present work goes toward converting the Whitaker lexicon into the form described. The conversion is done repeatably by a scripted process, such that the process can be audited, reviewed and modified indefinitely. The software is of course ad hoc, in no way is it any better than it needs to be, since it should fall out of use as soon as its one and only job is done satisfactorily.
 
 It amounts to either combining two or more definitions against a single lexeme into one, taking account of the qualifiers, or deciding that the entries should remain distinct being cases of homonymy. In fact there are few such cases where two lexemes have not only the same lemma but the sme category yet appear to unrelated. More often than that there is a temptation to leave widely different meanings as distinct meanings as separate lexemes though they are likely to have a historic relation.
 
@@ -59,20 +62,61 @@ The grammatical parts information has not been recovered and of course it should
 
 Some categories of Greek words have been dropped as being more trouble than they are worth (in a LAtin lexicon).
 
+We have not organised alternate forms. Alternate forms appear either as if distinct lexemes or if the lemma is unaffected do not appear at all.
+
 Thus what is retained the list of lexemes from Whitaker (with exclusions as noted) and the meanings in English. The lexemes are listed in the file lexid.txt. This file has as primary key lemma-category. In 35,000 entries there are only a few dozen cases of duplicate keys. These can be extracted by sorting -see the file lexid.uniq.txt. Against the key is listed the qualifiers, the version code and kind. On this subject see also below. As appropriate to the part of speech the conjugation or declension number and gender is given though these are also factored into the category. 
 
 The English meanings are in a separate file eng.txt indexed the same way and in the same order with the same number of records (blank lines etc omitted). Frequently the record is a combination of original records. For traceability a # sign and a clue of a few characters are inserted in the join.
 
-From the careful of ordering of Whitaker's original file, there can be a justifiable assumption that the first item in a combined entry is the most general. Therefore for the second and subsequent entries, but not the first, the qualifiers are treated as applying to the meaning and not the entry as a whole, and so are carried over into the combined meaning record.
+From the careful of ordering of Whitaker's original file, it is a reasonable assumption that the first item in a combined entry is the most general. Therefore for the second and subsequent entries, but not the first, the qualifiers are treated as applying to the meaning and not the entry as a whole, and so are carried over into the combined meaning record.
 
 Examples from lexid.txt and eng.txt
 
 lexid.txt
 salio-v4 con: 4 var: normal kind: TRA XXXDO
-interpretation: salio is a fourth conjugation verb, of "nor-mal" kind with version code XXXDO. (The var field is of no interest, should be removed.)
+interpretation: salio is a fourth conjugation verb, of "nor-mal" kind with version code XXXDO. (The var field is of no interest, should be removed.) It is a TRAnsitive verb.
 
 eng.txt:
 salio-v4              $salt, salt down, preserve with salt; sprinkle before sacrifice; #leR (nor XXXBS) $leap, jump; move suddenly/spasmodically (part of body under stress), twitch;$|spurt, discharge, be ejected under force (water/fluid); mount/cover (by stud); #le also (nor XXXBO) $...;
+
 interpretation: The description is a combination of four (even five) original entries (each begininning with $). First mentioned, to salt, we are asked to review (#leR) with the second, to leap ..., as to whether it is been correctly classified as one lexeme rather than two. (It is surely two.) The second line is joined to a third, spurt..., which begins with |. The | character is from Whitaker's file and it indicates that the line is a continuation of the previous line. The last part, "also (nor XXXBO)" means that the preceding line was duplicated by another line which had the qualifiers XXXBO.
 
-The original lines for salio, after a little processing, are best seen in DICTPAGE.OUT. The fact that salio, to salt, ends up as the main choice over salio, to leap, is not the best and it is a result simply of it being listed first by Whitaker. As a result of review, some kind of editing of the original file would be appropriate. Surely any author would treat the two senses of salio as distinct lexemes, but if not then the leap sense should be preferred as the leading one.
+The original lines for salio, after a little processing, are best seen in DICTPAGE.OUT. The fact that salio, to salt, ends up as the main choice over salio, to leap, is not the best and it is a result simply of it being listed first by Whitaker. As a result of review, some kind of editing of the original file would be appropriate. Any author would treat the two senses of salio as distinct lexemes, but if not then the leap sense should be preferred as the leading one.
+
+After editing, and removing the temporary signs the result would be-
+
+salio-v4-1 con: 4 kind: nor XXXBS
+salio-v4-1 leap, jump; move suddenly/spasmodically (part of body under stress), twitch; spurt, discharge, be ejected under force (water/fluid); mount/cover (by stud); also (nor XXXBO) ...;
+
+salio-v4-2 con: 4 kind: TRA XXXDO
+salio-v4-2 salt, salt down, preserve with salt; sprinkle before sacrifice;
+
+Whitaker gives the kind of salio to leap as nor-mal whereas INTransitive might have been expected. The differences in the version codes is B is a more frequently seen word than D, and the S entries are from Lewis and Short whereas the O's are from Oxford.
+
+In lexid.uniq.txt are collected the few lexeme keys that appeared to the heuristics to require disambiguation forms to be invented. In review.txt are listed the entries from lexid.txt that were flagged for review and remain after I dismissed the majority of the 250 originally found.
+
+Symbols for word categories
+
+Following symbols are used in constructing the category part of the lexeme keys. They are not the same as LILA uses but similar. Some may seem eccentric.
+
+  s noun           s (substantive), to leave n for neuter
+  v verb
+  a adj
+  @ adverb
+  & conjunction
+  e preposition    pr_e_
+  , particle 
+  o pronoun        pr_o_
+  ! interjection
+
+Gender
+  M F N
+
+Kind
+  nor  "normal" or no information 
+  TRA  transitive
+  INT  intransitive
+  DEP  deponent
+  P    person
+  T    thing
+  etc, see Whitaker
