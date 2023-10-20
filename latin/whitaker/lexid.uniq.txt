@@ -1,0 +1,15 @@
+Keys from lexid.txt appearing twice
+The keys should be distinguished by adding -1 or -2 else
+the definitions in eng.txt should be combined.
+      2 vis-s3F
+      2 sero-v3
+      2 Quiris-s3M
+      2 plecto-v3
+      2 malum-s2N
+      2 lustrum-s2N
+      2 intercido-v3
+      2 genius-s2M
+      2 cyprum-s2N
+      2 calx-s3C
+      2 astaphis-s3F
+      2 angelicus-a1
