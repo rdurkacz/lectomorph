@@ -1,8 +1,8 @@
-Reforming Whitaker's lexicon
+## Reforming Whitaker's lexicon
 
 Whitaker's lexicon is the file DICTLINE.GEN in his Words project. The project can be found in several palces on the web, notably https://github.com/dsanson/Words and http://mk270.github.io/whitakers-words . There are projects around to modernise Whitaker, case in point being https://github.com/cqb13/vocab-vault . There is some discussion among the players at https://www.reddit.com/r/latin/comments/168pnbc/whitakers_words_and_comparable_projects/ . The object here and now is to modernise the lexicon so that it can be used outside of Whitaker's program (only the English translations - to salvage the grammatical, ie inflectional, data is a bigger challenge.) The first step is to get hold of a list of lexemes.
 
-List of lexemes.
+## List of lexemes.
 
 From a lexicon it should be expected that one could extract a list of lexemes. Conversely a lexicon must be built upon a list of lexemes.
 
@@ -33,8 +33,9 @@ The grammatical information is about inflections, ie the principal parts or equi
 
 The connection between key and value may be qualified by a 'kind' attribute or by a version code. In the simpler case the lexeme itself is governed by a kind or a version. Whitaker gives a version code for every lexeme or codes specialised to eech of its property values. The kind applies to different to the various parts of speech and has either grammatical or semantic meaning.
 
-The components in the data are in summary as follow.
+### The components in the data are in summary as follow.
 
+```
 key
   lemma-category (plus occasional disambguating element)
 
@@ -45,6 +46,7 @@ value
 qualifications
   version code
   kind
+```
 
 A lexeme may have alternate forms, either alternate principal parts or an alternate stem leading to an alternate lemma therefore an alternate key. There should be signposts so that all alternates can be returned that apply to a given lexeme.
 
@@ -70,14 +72,18 @@ The English meanings are in a separate file eng.txt indexed the same way and in 
 
 From the careful of ordering of Whitaker's original file, it is a reasonable assumption that the first item in a combined entry is the most general. Therefore for the second and subsequent entries, but not the first, the qualifiers are treated as applying to the meaning and not the entry as a whole, and so are carried over into the combined meaning record.
 
-Examples from lexid.txt and eng.txt
+## Examples from lexid.txt and eng.txt
 
 lexid.txt
+```
 salio-v4 con: 4 var: normal kind: TRA XXXDO
 interpretation: salio is a fourth conjugation verb, of "nor-mal" kind with version code XXXDO. (The var field is of no interest, should be removed.) It is a TRAnsitive verb.
+```
 
 eng.txt:
+```
 salio-v4              $salt, salt down, preserve with salt; sprinkle before sacrifice; #leR (nor XXXBS) $leap, jump; move suddenly/spasmodically (part of body under stress), twitch;$|spurt, discharge, be ejected under force (water/fluid); mount/cover (by stud); #le also (nor XXXBO) $...;
+```
 
 interpretation: The description is a combination of four (even five) original entries (each begininning with $). First mentioned, to salt, we are asked to review (#leR) with the second, to leap ..., as to whether it is been correctly classified as one lexeme rather than two. (It is surely two.) The second line is joined to a third, spurt..., which begins with |. The | character is from Whitaker's file and it indicates that the line is a continuation of the previous line. The last part, "also (nor XXXBO)" means that the preceding line was duplicated by another line which had the qualifiers XXXBO.
 
@@ -85,17 +91,19 @@ The original lines for salio, after a little processing, are best seen in DICTPA
 
 After editing, and removing the temporary signs the result would be-
 
+```
 salio-v4-1 con: 4 kind: nor XXXBS
 salio-v4-1 leap, jump; move suddenly/spasmodically (part of body under stress), twitch; spurt, discharge, be ejected under force (water/fluid); mount/cover (by stud); also (nor XXXBO) ...;
 
 salio-v4-2 con: 4 kind: TRA XXXDO
 salio-v4-2 salt, salt down, preserve with salt; sprinkle before sacrifice;
+```
 
 Whitaker gives the kind of salio to leap as nor-mal whereas INTransitive might have been expected. The differences in the version codes is B is a more frequently seen word than D, and the S entries are from Lewis and Short whereas the O's are from Oxford.
 
 In lexid.uniq.txt are collected the few lexeme keys that appeared to the heuristics to require disambiguation forms to be invented. In review.txt are listed the entries from lexid.txt that were flagged for review and remain after I dismissed the majority of the 250 originally found.
 
-Symbols for word categories
+## Symbols for word categories
 
 Following symbols are used in constructing the category part of the lexeme keys. They are not the same as LILA uses but similar. Some may seem eccentric.
 
