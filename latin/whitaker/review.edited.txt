@@ -1,0 +1,48 @@
+Combined definitions flagged for review. 46 of 250 or so retained after a cursory review (by the author).
+
+accido-v3 XXXCO $cut, cut into/down/up, hack, hew, fell; overthrow, destroy; cut short; weaken; #dR (IMP XXXCO) $happens, turns out, befalls; fall upon; come to pass, occur; #leR (nor XXXAO) $fall upon/down/to/at or near, descend, alight; happen, occur; happen to (DAT);
+adfundo-v3 XXXBO $pour on/upon/into, heap up; shed/spill (blood); wash; #leR (DEP XXXCO) $prostrate oneself; cause to be spread on/over; flow alongside/past (streams);
+adsero-v3 XXXBO $lay hands on, grasp; assert, allege; free, release; claim; protect, preserve; #leR (TRA XXXDO) $plant/set at/near;
+affundo-v3 XXXBO $pour on/upon/into, heap up; shed/spill (blood); wash; #leR (DEP XXXCO) $prostrate oneself; cause to be spread on/over; flow alongside/past (streams);
+assero-v3 XXXBO $lay hands on/grasp; assert/state/allege; free/release; claim; protect/preserve; #leR (TRA XXXDO) $plant/set at/near;
+attingo-v3 XXXAO $touch, touch/border on; reach, arrive at, achieve; mention briefly; belong to; #leR (TRA XXXFO) $wipe/smear on?;
+carino-v1 XWXNO $turn into/shape like a ship/hull; supply with/get/grow a shell; #dR (INT BXXEO) $curse, abuse, revile, blame; use abusive language; #leR (DEP BXXEO) $curse, abuse, revile, blame; use abusive language;
+causo-v1 FXXEE $cause; #leR (DEP XLXCO) $allege an excuse/reason, object; excuse oneself; plead a cause, bring action;
+commino-v1 XXXFO $drive (cattle) together, round up; #leR (DEP XXXCO) $threaten, make a threat;
+communico-v1 XXXAO $share; share/divide with/out; receive/take a share of; receive; join with;$|communicate, discuss, impart; make common cause; take common counsel, consult; #leR (DEP XXXDS) $share; share/divide with/out; receive/take a share of; receive; join with;
+consero-v3 XXXBO $connect/link, fasten/press/put together; construct/compose; join, engage (in); #le also (TRA DXXFS) $...; #leR (TRA XXXES) $sow, plant (field/crops/seeds/tree), set; breed; sow/strew plentifully/thickly; #le also (TRA XXXCO) $...;
+conto-v1 XXXFO $inquire; #leR (DEP DXXBS) $delay, impede, hold up; hesitate, tarry, linger; be slow to act; dawdle; doubt;
+converso-v1 XXXEO $turn, turn over in the mind, ponder; turn around (L+S); #leR (DEP XXXCO) $consort/associate (with); be constant visitor (to); conduct oneself, behave/act; #d (XXXCS) $|abide, live, dwell (somewhere); keep company with; live with; pass one's life;
+decido-v3 XXXBO $detach, cut off/out/down; fell; cut/notch/carve to delineate; flog thoroughly;$|make explicit; put an end to, bring to conclusion, settle/decide/agree (on); #leR (INT XXXBO) $fall/drop/hang/flow down/off/over; sink/drop; fail, fall in ruin; end up; die;
+desero-v3 XXXAO $leave/depart/quit/desert; forsake/abandon/give up; withdraw support, let down;$|cease to be concerned with; fail/fall short; (PASS w/ABL) be without/deprived; #leR (TRA XAXFS) $plant, sow;
+devorto-v3 XXXBO $divert, turn away/aside/in/off; detour/digress/branch off; lodge/put up; #leR (nor XXXCE) $divert, turn away/aside/in; digress; separate, oppose; resort to; lodge;
+dissero-v3 XXXFO $unfasten, unbar; unlock; #leR (TRA XAXCO) $plant/sow at intervals; scatter/distribute, plant here/there; separate/part; #leR (nor XXXCO) $arrange, dispose, set in order; discuss; examine; explain, set out in words; #leR (TRA XAXDS) $plant/sow at intervals; scatter/distribute, plant here/there; separate/part;
+ecfo-v1 XEXDO $demarcate in words areas/boundaries for augury signs might be observed (PASS); #leR (DEP XXXCO) $utter, say (solemn words); declare, announce, make known; speak, express;
+effo-v1 XEXDO $demarcate in words areas/boundaries for augury signs might be observed (PASS); #leR (DEP XXXCO) $utter, say (solemn words); declare, announce, make known; speak, express;
+eicio-v3 XXXDX $accomplish, perform, bring about, cause; #leR (TRA XXXDX) $cast/throw/fling/drive out/up, extract, expel, discharge, vomit; out (tongue);
+excido-v3 XXXDX $cut out/off/down; raze, destroy; #leR (nor XXXBX) $perish; disappear; escape, fall out; be deprived of; lose control of senses;
+honesto-v1 XXXDX $honor (with); adorn, grace; #leR (DEP FXXEE) $be earnest/serious/grave;
+inseco-v1 XXXCO $cut/incise; make incision in; make by cutting; cut into/up (L+S); dissect; #leR (nor BXXEO) $tell; tell of; relate (L+S); declare; pursue the narration;
+insequo-v3 XXXBX $follow/come after; attack; overtake; pursue (hostile); come after (time); #leR (nor BXXFO) $tell; tell of; relate (L+S); declare; pursue the narration; tell me about it;
+lustro-v1 XXXCO $purify cermonially (w/procession), cleanse by sacrifice, expiate; #dR (nor XXXBO) $review/inspect, look around, seek; illuminate; traverse/roam/move over/through; #leR (DEP XXXEO) $haunt/frequent brothels;
+recido-v3 XXXBO $fall/sink back, lapse/relapse/revert; fall to earth; come to naught; rebound on; #leR (TRA XXXCO) $cut back/off (to base/tree), prune; cut back/away; get by cutting; curtail;
+salio-v4 XXXDO $salt, salt down, preserve with salt; sprinkle before sacrifice; #leR (nor XXXBS) $leap, jump; move suddenly/spasmodically (part of body under stress), twitch;$|spurt, discharge, be ejected under force (water/fluid); mount/cover (by stud); #le also (nor XXXBO) $...;
+vado-v1 XXXDX $accept sureties from (the other party) for his appearance in court; #leR (nor XXXDX) $ford;
+vadio-v1 FLXFY $pledge (to meet debt); #leR (nor FLXFJ) $fight (a duel);
+liceo-v2 XXXAX $it is permitted, one may; it is all right, lawful, allowed, permitted; #leR (INT XXXDX) $fetch (price); (with ABL or GEN); #leR (DEP XXXCO) $bid on/for, bid, bid at auction; make a bid;
+liqueo-v2 XXXDX $be in molten/liquid state; be clear to a person; be evident; #leR (IMP XXXDX) $it is proven, guilt is established; [non ~ => not proven as a verdict/N.L.];
+gremium-s2N XXXEO $firewood; (singular or collective); #leR (Z XXXBX) $lap, bosom; womb, interior; female genital parts;
+
+milium-s2N XXXDO $millet; #leR (Z XXXDX) $thousands (pl.);
+praeconium-s2N GXXEK $advertisement; #leR (Z XXXDX) $praise, celebrating; proclamation, publication; office of public crier;
+repositorium-s2N FXXEK $servicing, small table of service; #leR (Z XXXDX) $tray;
+rosarium-s2N GXXEK $rosary; #leR (Z XXXDO) $rose-garden; rose-bed;
+tugurium-s2N GXXEK $hangar; discount; #leR (Z XXXDX) $cottage;
+liber-s2M XXXAX $children (pl.); (sg. VOC) child; #leR (Z XXXDX) $book, volume; inner bark of a tree;
+anas-s3F XAXCO $duck; #dR (T XBXFO) $senility in women; disease in old women (L+S); #leR (Z XAXFO) $duck; #le also (Z XAXEO) $...;
+mastix-s3F EXXFP $lash; punishment; anguish (Vulgate); #leR (Z DAXFS) $mastic, gum/resin of Pistacia lentiscus/other trees;
+os-s3N XXXAX $mouth, speech, expression; face; pronunciation; #leR (Z XXXBX) $bone; (implement, gnawed, dead); kernel (nut); heartwood (tree); stone (fruit); #leR (Z XXXDX) $bones (pl.); (dead people);
+anticus-a1 XXXES $foremost, that is in front; #leR (nor XXXAO) $old, ancient; aged; time-honored; primeval; simple, classic, venerable; senior;
+conditus-a1 XXXCO $preserved, kept in store; hidden, concealed, secret; sunken (eyes); #leR (nor XXXCO) $seasoned, spiced up, flavored, savory; polished, ornamented (discourse/style);
+incensus-a1 XLXEO $unassessed, not assessed; unregistered, not registered/enrolled in census; #leR (nor XXXEO) $ardent, impassioned; radiant, glowing; inflamed, fiery, burning, hot (L+S);
+contente-@ XXXFO XXFO $closely, in a restrictive/restrained manner; #leR ( XXXDO) $with great exertion, vehemently, vigorously; eagerly, earnestly;

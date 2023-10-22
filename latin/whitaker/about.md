@@ -107,6 +107,7 @@ In lexid.uniq.txt are collected the few lexeme keys that appeared to the heurist
 
 Following symbols are used in constructing the category part of the lexeme keys. They are not the same as LILA uses but similar. Some may seem eccentric.
 
+```
   s noun           s (substantive), to leave n for neuter
   v verb
   a adj
@@ -128,3 +129,9 @@ Kind
   P    person
   T    thing
   etc, see Whitaker
+```
+
+### Conversion scripts
+The scripts etc that were used in converting Whitaker's lexicon can be found in src/ directory. The value of them is to rerun the entire conversion process when defects are found in the present results, as will happen as soon as I or anyone else attempts to make serious use of them. The ada files cannot be compiled alone since they link into Whitaker's ada files. I will cooperate if anyone wants to carry on with these scripts.
+
+Convert.py goes a step further to produce csv files.
