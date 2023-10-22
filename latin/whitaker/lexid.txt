@@ -6709,13 +6709,13 @@ praepossum-v5 con: 5 var: 2 kind: INT DXXDS
 praesum-v5 con: 5 var: 1 kind: nor XXXBX
 prosum-v5 con: 5 var: 1 kind: nor XXXAX
 subsum-v5 con: 5 var: 1 kind: nor XXXDX
-
-#dp/v72,
 supersum-v5 con: 5 var: 1 kind: nor XXXAX
+
+#dp/v72,   --the script displaces these headings by one spot every time.
+inquiam-v7 con: 7 var: 2 kind: nor XXXAX
 
 ## nouns n declension (1 2 3 4 5) gender (m f n)
 #dp/s11, decl: gen: kind: XXXXX
-inquiam-v7 con: 7 var: 2 kind: nor XXXAX
 abamita-s1F decl: 1 gen: F kind: P XXXEO
 abavia-s1F decl: 1 gen: F kind: P XXXEO
 abbatia-s1F decl: 1 gen: F kind: T EEXCE
@@ -33392,7 +33392,6 @@ terrester-a3 decl: 3 var: 3 kind: POS XXXEO
 ## numbers 9
 #dp/cX11
 volucer-a3 decl: 3 var: 3 kind: POS XXXFO
-
 #dp/cX12
 unus-9 XXXAX
 
