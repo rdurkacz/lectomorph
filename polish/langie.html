@@ -1,10 +1,11 @@
 <html>
 <!-- Copyright notice.
-  Copyright Robert Durkacz 2023
+  Copyright Robert Durkacz 2024
   robert.durkacz@gmail.com
-  This work is derived in large part from resources of
-  https://outils.biblissima.fr/fr/collatinus/
-  and their copyright is acknowledged.
+  This work is derived in part from dictionaries hosted on the following websites,
+  and their respective copyright is acknowledged.
+  http://lektorek.org/polish Copyright (c) 2021 Oscar Swan
+  http://sgjp.pl/ and http://morfeusz.sgjp.pl/
 -->
 
 <head>
@@ -63,8 +64,6 @@
 <div class="container" id="main">
 </div>
 <script charset="utf-8">
-  <!-- const fw= 7.23; for monospace on Firefox and chromium-browser -->
-  <!-- const fw= 6.105; for Consolas Microsoft Edge -->
 </script>
 <script charset="utf-8">
 const canvas = document.getElementById("canvas");
@@ -1182,7 +1181,7 @@ strlist.prototype.pop =function() {   //return Ato_...
     let value= this.content[this.cursor];
     if (!(value >'0' && value <='9')) console.log ("strange");
     else {
-      console.log ("punctuation ", value);
+      //console.log ("punctuation ", value);
       this.cursor++;
       if (this.content[this.cursor] ==' ') this.cursor++;
     }
@@ -1254,11 +1253,11 @@ strlist.prototype.nexttext= function () //return the next item in list
             this.style= style;  //the trailing comma or whatever
             this.cursor++;  //off punctuation, onto space
           }
-          console.log ("punctuation (", this.style, ")");
+          //console.log ("punctuation (", this.style, ")");
         }
         else if (this.style =="1"); //nothing except move off space
         else if (this.style !="") {
-          console.log ("punctuation (", this.content[this.cursor], ")"); //forgotten for now
+          //console.log ("punctuation (", this.content[this.cursor], ")"); //forgotten for now
           this.cursor++; //move off punctuation onto space
         }
       }
@@ -2362,7 +2361,7 @@ P1.prototype.sco= function()
 <textarea id="story" name="story" class="textstyle"
   readonly="true" wrap="off" autofocus="" spellcheck="false" rows="36" cols="80">
 
-De Bello Gallico from Project Gutenberg
+Project Gutenberg's O Sprawie Glodowej W Galicyi 1866, by Karol Langie
 </textarea>
 
 <!-- crude way to store annotated text before formatting. textarea should not be displayed -->
