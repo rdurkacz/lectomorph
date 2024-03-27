@@ -19,7 +19,7 @@ Machine translation, or translation by 'artificial intelligence', of languages i
 
 A user must have a serious attitude to learning the principles of the foreign language and will have to work hard to extract the meaning even with the words analysed. Likewise the software while simple enough is not necessarily ovbious in how to use it. 
 
-##Presentation
+## Presentation
 
 With databases prepared it is a simple enough matter to collect the analyses for a word in a foreign language text but we aim higher than that, so as to give the user something of the same benefit that he or she would have if accomplished in the foreign language. It is a matter of presentation. Whereas words in text could be looked as needed, if the user was in possession of the databases, the primary means of delivery is to process and annotate an entire text. The format of the annotations is in principle readable but in practice not so, and the annotationns are far more bulky than the basic text.
 
@@ -27,7 +27,7 @@ Since no well-known editor would be programmable to do this, editing facilities 
 
 For examples, please consult any of the "usage" pdf documents accompanying the html files.
 
-##The repository layout.
+## The repository layout.
 Although we are advocating an approach applicable to multiple languages, there are no common resources to be presented. The main resources are demonstration annotated text files. The content is split by the target foreign language, Polish and Latin. Within these divisions the the next division is into the operating languages, being English and also French.
 
 In the Latin directory we have given for the sake of disclosure the processing of the Whitaker data files. If anyone wishes to reproduce or audit this work they may ask for further information or assistance, since while the data is there it is not in a buildable state.
